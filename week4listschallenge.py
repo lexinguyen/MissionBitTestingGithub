@@ -5,8 +5,15 @@
 # learned in the previous exercises, write code that asks the user what cuisine they are interested
 # in. If the cuisine they entered is not in the list, print the string "Please choose one of these
 # cuisines: [LIST OF CUISINES HERE]".
-
 # YOUR CODE HERE
+cuisines = ['American', 'Japanese', 'Vietnamese', 'Chinese', 'Korean', 'French', 'Italian', 'Mexican', 'Thai']
+print(cuisines)
+cuisine_choice = input("What type of cuisine are you interested in? ")
+if cuisine_choice in cuisines:
+    print('cool')
+else:
+    print("Sorry that's not in our list, please choose one that is on this list: ", cuisines)
+    cuisine_choice  = input("What type of cuisine are you interested in? ")
 
 ####################################################################################################
 # Find the name of at least three black-owned restaurants nearby and store their names in a list.
@@ -16,6 +23,12 @@
 # https://www.google.com/maps/search/black+owned+restaurants 
 # YOUR CODE HERE
 
+bor = ["Keith's Chicken and Waffles", "Little Skillet", "Tastebuds" ]
+count = 0
+print("Here are some local Black Owned Restaurants")
+for x in bor:
+    print(str(count) + x)
+    count += 1
 ####################################################################################################
 # Take your list of restaurants from the previous challenge and print them out in a numbered list.
 # Example:
