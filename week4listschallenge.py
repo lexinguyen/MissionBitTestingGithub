@@ -24,11 +24,15 @@ else:
 # YOUR CODE HERE
 
 bor = ["Keith's Chicken and Waffles", "Little Skillet", "Tastebuds" ]
-count = 0
-print("Here are some local Black Owned Restaurants")
+count = 1
+print("Here are some local Black Owned Restaurants:")
 for x in bor:
-    print(str(count) + x)
+    print(str(count) + ". " + x)
     count += 1
+
+#for i in range(len(bor)):
+    #print(str(i+1) + ". " + bor[i],)
+
 ####################################################################################################
 # Take your list of restaurants from the previous challenge and print them out in a numbered list.
 # Example:
@@ -46,3 +50,6 @@ for x in bor:
 # 3. <RESTAURANT 3> is 10.2 miles away
 
 # YOUR CODE HERE 
+distances = [2.4, 6.8, 10.2]
+for i in range(len(bor)):
+    print(str(i+1) + ". " + bor[i], "is " + str(distances[i]) + " miles away")
